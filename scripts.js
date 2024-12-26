@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const fileInput = document.getElementById('pdfFile');
         const file = fileInput.files[0];
-        const url = 'http://localhost:3000';
+        const url = 'https://qrcodegenbackend.fly.dev';
 
         if (!file) {
             alert('Please upload a PDF.');
