@@ -7,8 +7,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #loadingModal .modal-content {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        #loadingModal .spinner-border {
+            width: 6rem;
+            height: 6rem;
+            border-width: 8px;
+        }
+        #loadingModal p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Sexy Loading Modal -->
+    <div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-5">
+                <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Generating Your QR Code...</p>
+            </div>
+        </div>
+    </div>
+    
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
